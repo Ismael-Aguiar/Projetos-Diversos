@@ -8,6 +8,6 @@
 * quando a matriz estiver organizanda o jogo acaba
 
 *Informar linha e coluna dos lugares onde haverão as trocas*
-*Ex: 
+**Ex:** 
 *Digite qual posição será alterada:* 12
 *Digite para onde deseja mover a posição selecionada:*  11
