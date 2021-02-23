@@ -1,4 +1,5 @@
 **Organiza tabuleiro**
+* Jogo em tela de console
 * Você receberá uma matriz desorganizada
 * O objetivo é colocar os números em ordem crescente
 * O zero (0) deve ficar no início da tabela
