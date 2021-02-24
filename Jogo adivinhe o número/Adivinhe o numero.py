@@ -21,10 +21,15 @@ def verifica(num):
 	global sorteio, cont_jog, max_jog
 	while True:
 		if cont_jog>=max_jog:
-			print('jogada {}/{}\n'.format(cont_jog, max_jog))
-			print('Fim das jogadas')
-			print(emoji.emojize('Você perdeu:disappointed_relieved:', use_aliases=True))
-			print('Número sorteado {}'.format(sorteio))
+			if num != sorteio:
+				print('jogada {}/{}\n'.format(cont_jog, max_jog))
+				print('Fim das jogadas')
+				print(emoji.emojize('Você perdeu:disappointed_relieved:', use_aliases=True))
+				print('Número sorteado {}'.format(sorteio))
+				break
+			else:
+				print(emoji.emojize(':tada:\033[34m!!!Você venceu, parabéns!!!\033[m:tada:', use_aliases=True))
+			print('\033[34mVocê jogou {} vezes\033[m'.format(cont_jog))
 			break
 		elif num < sorteio:
 			cont_jog+=1
