@@ -29,8 +29,8 @@ def verifica(num):
 				break
 			else:
 				print(emoji.emojize(':tada:\033[34m!!!Você venceu, parabéns!!!\033[m:tada:', use_aliases=True))
-			print('\033[34mVocê jogou {} vezes\033[m'.format(cont_jog))
-			break
+				print('\033[34mVocê jogou {} vezes\033[m'.format(cont_jog))
+				break
 		elif num < sorteio:
 			cont_jog+=1
 			print('jogada {}/{}'.format(cont_jog-1, max_jog))
